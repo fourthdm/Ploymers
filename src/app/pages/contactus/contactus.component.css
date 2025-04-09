@@ -1,0 +1,35 @@
+input,
+textarea {
+    width: 100%;
+    outline-color: #ff001e72;
+}
+
+label {
+    font-size: large;
+    font-weight: 500;
+}
+
+.p {
+    font-size: 19px;
+}
+
+h1,
+h4 {
+    color: #ff001c;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin: 10px;
+    border: 1px solid #ff001c;
+    padding: 2%;
+    border-radius: 50%;
+}
+
+i{
+    color: #ff001c;
+}

@@ -1,0 +1,12 @@
+.scroll-video-wrapper {
+  position: relative;
+}
+
+.video-frame {
+  position: fixed;
+  top: 0;
+  left: 10;
+  width: 30%;
+  height: 100%;
+  /* z-index: 10; */
+}
