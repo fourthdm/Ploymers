@@ -11,8 +11,17 @@ gsap.registerPlugin(ScrollTrigger);
 export class AppComponent implements OnInit {
   title = 'polymer';
 
-  ngOnInit(): void {
-    
+  scrolltop = document.getElementById('scrolltop');
+  rootelement = document.documentElement;
+
+  scroll() {
+    this.rootelement.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   }
 
+  ngOnInit(): void {
+
+  }
 }
