@@ -215,7 +215,7 @@ h3 {
     background: linear-gradient(rgb(9, 162, 120) 0%, rgb(9, 162, 120) 98%, rgb(96, 120, 79) 99%, rgb(184, 78, 39) 100%);
     min-width: 46.95vw;
     width: 46.95vw;
-    opacity: 1;
+
     .footer {
         /* padding-inline: 4%; */
         margin-top: 10%;
@@ -253,6 +253,7 @@ h3 {
     min-width: 46.95vw;
     width: 46.95vw;
     z-index: 0;
+
     .footer {
         /* padding-inline: 4%; */
         margin-top: 10%;
