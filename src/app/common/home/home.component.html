@@ -2,49 +2,61 @@
     <div id="colorbox-desktop" class="sidebars">
         <img src="/assets/logo.png" id="myDiv" class="logoimage" alt="Logo image">
         <div class="side">
-            <ul>
-                <a href="" [routerLink]="['/About']">
-                    <li>Introduction</li>
-                </a>
-                <a href="" [routerLink]="['/Home']">
-                    <li>Home</li>
-                </a>
-                <a href="" [routerLink]="['/About']">
-                    <li>About</li>
-                </a>
-                <a href="" [routerLink]="['/Our-products']">
-                    <li>Our Product</li>
-                </a>
-                <a href="" [routerLink]="['/Contact-us']">
-                    <li>Contact </li>
-                </a>
-            </ul>
-            <ul class="navproduct">
-                <li>Nylon Granules</li>
-                <li>Acrylonitrile Butadiene Styrene</li>
-                <li>Polypropylene (PP)</li>
-                <li>Polyoxymethylene (POM)</li>
-                <li>Polycarbonates (PC)</li>
-                <li>Poly Methyl Methacrylate (PMMA)</li>
-                <li>Poly Vinyl Chloride (PVC)</li>
-                <li>Polystyrene (PS)</li>
-                <li>Polybutylene Terephthalate (PBT)</li>
-                <li>Polyethylene (PE)</li>
-            </ul>
-            <div class="footer">
-                <h5>Privacy Policy</h5>
-                <h5>Designed by <a href="https://fourthdm.in/" target="_blank">FourthDm</a></h5>
-                <h5>Developed by <a href="https://fourthdm.com/" target="_blank">FourthDm</a></h5>
-                <p> &copy;SSB 2025</p>
+
+            <div class="navlinkss">
+                <ul>
+                    <a href="#Intro">
+                        <li [routerLink]="['/Video']">Introduction</li>
+                    </a>
+                    <a href="#Home">
+                        <li  [routerLink]="['/Home']">Home</li>
+                    </a>
+                    <a href="#About">
+                        <li [routerLink]="['/About']">About</li>
+                    </a>
+                    <a href="#Products" >
+                        <li [routerLink]="['/Our-products']">Our Product</li>
+                    </a>
+                    <a href="#Contact">
+                        <li [routerLink]="['/Contact-us']">Contact </li>
+                    </a>
+                </ul>
+                <ul class="navproduct">
+                    <a href="#Nylon-granules">
+                        <li>Nylon Granules</li>
+                    </a>
+                    <a href="#Acrylonitrile"><li>Acrylonitrile Butadiene Styrene </li></a>
+                    <a href="#Polypropylene"><li>Polypropylene (PP)              </li></a>
+                    <a href="#Polyoxymethylene"><li>Polyoxymethylene (POM)          </li></a>
+                    <a href="#Polycarbonates"><li>Polycarbonates (PC)             </li></a>
+                    <a href="#Poly_Methyl_Methacrylate"><li>Poly Methyl Methacrylate (PMMA) </li></a>
+                    <a href="#Poly_Vinyl_Chloride"><li>Poly Vinyl Chloride (PVC)       </li></a>
+                    <a href="#Polystyrene"><li>Polystyrene (PS)                </li></a>
+                    <a href="#Polybutylene_Terephthalate"><li>Polybutylene Terephthalate (PBT)</li></a>
+                    <a href="#Polyethylene"><li>Polyethylene (PE)               </li></a>
+                </ul>
             </div>
 
-            <ul class="menu">
-                <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f "></i></a>
-                </li>
-                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in "></i></a>
-                </li>
-                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube "></i></a></li>
-            </ul>
+            <div class="footer">
+                <div class="privacypolicy">
+                    <h5>Privacy Policy</h5>
+                    <h5>Designed by <a href="https://fourthdm.in/" target="_blank">FourthDm</a></h5>
+                    <h5>Developed by <a href="https://fourthdm.com/" target="_blank">FourthDm</a></h5>
+                    <p> &copy;SSB 2025</p>
+                </div>
+                <br>
+                <ul class="menu">
+                    <li><a href="https://www.facebook.com/" target="_blank"><i
+                                class="fa-brands fa-facebook-f fa-xl "></i></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/" target="_blank" viewBox="0 0 51 51"><i
+                                class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/" target="_blank"><i
+                                class="fa-brands fa-youtube fa-xl"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="">
@@ -56,9 +68,8 @@
                 </div>
             </div>
         </div>
-        <!-- <app-about></app-about> -->
-        <div class="description  blue">
-            <div>
+        <div class="description">
+            <div id="About">
                 <div class="aboutsection">
                     <div class="about">
                         <div class="nabout">
@@ -66,14 +77,13 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-9">
                             <p class="p"> <b style="font-weight: 700;">S.S.B. POLYMERS & S.S.B. ENTERPRISES</b> is a
-                                privately owned dynamic
-                                company,
-                                founded in 2008 as an international reselling/trading company of industrial plastic raw
-                                materials.
+                                privately owned dynamic company, founded in 2008 as an international reselling/trading
+                                company of industrial plastic raw materials.
                                 We have been performing in the plastic material industry since 2008 and we are mainly
                                 specialized in Nylon / ABS and Polypropylene raw material.
                                 Worldwide product sourcing and
@@ -81,14 +91,17 @@
                                 processors and converters. Very concerned by the future of our planet we also focus on
                                 regrinds and regran from post industrial and post consumer waste.</p>
                         </div>
-                    </div><br><br>
+                    </div>
+                    <br><br>
                     <div class="row">
+
                         <div class="col-md-2">
                             <div class="divss">
                                 <!-- <h3>Our Activities</h3><br> -->
                                 <p></p>
                             </div>
                         </div><br>
+
                         <div class="col-md-4">
                             <div class="divss">
                                 <h3>Activities</h3>
@@ -103,6 +116,7 @@
                                     Materials,Thermoplastic Granules, Thermoplastic Raw Materials</p>
                             </div>
                         </div><br>
+
                         <div class="col-md-3">
                             <div class="divss">
                                 <h3>Assurance</h3>
@@ -111,6 +125,7 @@
                                     committed to manufacture Plastic Raw Materials.</p>
                             </div>
                         </div><br>
+
                         <div class="col-md-3">
                             <div class="divss">
                                 <h3>Certifications</h3>
@@ -378,10 +393,9 @@
 </div>
 
 <div class="" style="display: flex; height: 100%; flex-direction: row;">
-    <div class="div"
-        style="background: linear-gradient(rgb(9, 162, 120) 0%, rgb(9, 162, 120) 98%, rgb(96, 120, 79) 99%, rgb(184, 78, 39) 100%); min-width: 13.79vw; width: 13.79vw;">
+    <div id="colorbox-desktop" class="productdiv">
     </div>
-    <section class="red">
+    <section class="red" id="Products">
         <div class="productsection">
             <div class="products">
                 <div class="nproducts">
@@ -391,7 +405,7 @@
         </div>
         <br>
         <div class="container-fluid">
-            <div class="nylon-granules">
+            <div id="Nylon-granules">
                 <h3> 1. Nylon Granules :</h3>
                 <p>
                     We are Manufacturer, Supplier, Exporter of Nylon Granules, Nylon 6 Unfilled Granules, Nylon
@@ -451,7 +465,7 @@
                 <br>
             </div>
             <br>
-            <div class="abs">
+            <div id="Acrylonitrile" class="abs">
                 <h3> 2. Acrylonitrile Butadiene Styrene (ABS) :</h3> <br>
                 <p>
                     We are Manufacturer, Supplier, Exporter of Acrylonitrile Butadiene Styrene Granules, ABS
@@ -492,7 +506,7 @@
                 <br>
             </div>
             <br>
-            <div class="pp">
+            <div id="Polypropylene" class="pp">
                 <h3> 3. Polypropylene (PP) </h3> <br>
                 <p>
                     We are Manufacturer, Supplier, Exporter of Polypropylene Granules, PP Granules, PPCP Black,
@@ -532,7 +546,7 @@
                 <br>
             </div>
             <br>
-            <div class="pom">
+            <div id="Polyoxymethylene" class="pom">
                 <h3> 4. Polyoxymethylene (POM) </h3> <br>
                 <p>We are Manufacturer, Supplier, Exporter of Polyoxymethylene Granules, POM Plastic Granules
                     and our setup is situated in Pune, Maharashtra, India.
@@ -568,7 +582,7 @@
                 <br>
             </div>
             <br>
-            <div class="pc">
+            <div class="pc" id="Polycarbonates">
                 <h3>5. Polycarbonates (Pc) </h3> <br>
                 <p>We are Manufacturer, Supplier, Exporter of Polycarbonate Granules, PC Granules, Polycarbonate
                     Natural Granules, Polycarbonate Black Granules and our setup is situated in Pune,
@@ -605,7 +619,7 @@
                 <br>
             </div>
             <br>
-            <div class="PMMA">
+            <div class="PMMA" id="Poly_Methyl_Methacrylate">
                 <h3>6. Poly Methyl Methacrylate (PMMA) </h3> <br>
                 <p>We are Manufacturer, Supplier, Exporter of Polymethyl Methacrylate Granules, PMMA Plastic
                     Granules, PMMA Granules, PMMA Natural Granules, PMMA Red Granules and our setup is situated
@@ -641,7 +655,7 @@
                 <br>
             </div>
             <br>
-            <div class="pvc">
+            <div class="pvc" id="Poly_Vinyl_Chloride">
                 <h3>7. Poly Vinyl Chloride (PVC)</h3> <br>
                 <p>We are Manufacturer, Supplier, Exporter of Poly Vinyl Chloride Granules, PVC Granules, PVC
                     Black Granules, Natural PVC Granules, PVC Colored Granules, PVC Transparent Granules and our
@@ -679,7 +693,7 @@
                 <br>
             </div>
             <br>
-            <div class="ps">
+            <div id="Polystyrene" class="ps">
                 <h3>8. Polystyrene (PS)</h3> <br>
                 <p>We are Manufacturer, Supplier, Exporter of Polystyrene Granules, PS Granules, HIPS Granules,
                     GPPS Granules and our setup is situated in Pune, Maharashtra, India.
@@ -713,7 +727,7 @@
                 <br>
             </div>
             <br>
-            <div class="pbt">
+            <div id="Polybutylene_Terephthalate" class="pbt">
                 <h3>9. Polybutylene Terephthalate (PBT)</h3> <br>
                 <p>We are Manufacturer, Supplier, Exporter of Polybutylene Terephthalate Granules, PBT Granules,
                     PBT Natural Granules, PBT Black Granules, PBT Glass Filled Granules, PBT Unfilled
@@ -748,7 +762,7 @@
                 <br>
             </div>
             <br>
-            <div class="pe">
+            <div id="Polyethylene" class="pe">
                 <h3>10. Polyethylene (PE)</h3> <br>
                 <p>We are Manufacturer, Supplier, Exporter of Polyethylene Granules, PE Granules, HDPE Granules,
                     LDPE Granules, LLDPE Granules and our setup is situated in Pune, Maharashtra, India.
@@ -785,21 +799,17 @@
     </section>
 </div>
 
-
 <div class="" style="display: flex; height: 100%; flex-direction: row;">
-    <div class="div"
-        style="background: linear-gradient(rgb(184, 78, 39) 0%, rgb(184, 78, 39) 98%, rgb(237, 19, 19) 99%, rgb(255, 0, 0) 100%); min-width: 13.79vw; width: 13.79vw;">
+    <div  id="colorbox-desktop"  class="contactdiv">
     </div>
-
-    <div class="divc">
-        <div class="productsection">
-            <div class="products">
-                <div class="nproducts">
+    <div class="divc" id="Contact">
+        <div class="contactsection">
+            <div class="contact">
+                <div class="ncontact">
                     <h1>Contact Us</h1>
                 </div>
             </div>
         </div>
         <app-contactus></app-contactus>
     </div>
-
 </div>
