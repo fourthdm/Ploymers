@@ -25,6 +25,7 @@
     box-sizing: border-box;
     margin: 0px 0px 1.3vw;
     min-width: 0px;
+    /* background: linear-gradient(rgba(184, 78, 39, 0) 0%, rgba(184, 78, 39, 0) 0.3%, rgba(184, 78, 39, 0.1) 20%, rgba(184, 78, 39, 0.2) 29%, rgba(184, 78, 39, 0.55) 62%, rgb(184, 78, 39) 100%); */
     background: linear-gradient(rgba(184, 78, 39, 0) 0%, rgba(184, 78, 39, 0) 0.3%, rgba(184, 78, 39, 0.1) 20%, rgba(184, 78, 39, 0.2) 29%, rgba(184, 78, 39, 0.55) 62%, rgb(184, 78, 39) 100%);
     height: 100px;
     transform: rotate(-180deg);
@@ -163,10 +164,17 @@ h3 {
     position: fixed;
 }
 
+
 .sidebars {
     background: linear-gradient(rgb(0, 58, 188) 0%, rgb(0, 58, 188) 98%, rgb(4, 110, 154) 99%, rgb(9, 162, 120) 100%);
     min-width: 13.79vw;
     width: 13.79vw;
+}
+
+@media(max-width:439px) {
+    .sidebars {
+        display: none;
+    }
 }
 
 .navlinkss {
@@ -181,7 +189,6 @@ h3 {
     width: 46.95vw;
 
     .footer {
-        /* padding-inline: 4%; */
         margin-top: 10%;
 
         a {
@@ -212,12 +219,16 @@ h3 {
 }
 
 .productdiv:hover {
-    background: linear-gradient(rgb(9, 162, 120) 0%, rgb(9, 162, 120) 98%, rgb(96, 120, 79) 99%, rgb(184, 78, 39) 100%);
-    min-width: 46.95vw;
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    background-color: transparent;
+    transition: background-color 0.75s;
+    z-index: 999;
     width: 46.95vw;
+    transform-origin: 50% 50% 0px;
 
     .footer {
-        /* padding-inline: 4%; */
         margin-top: 10%;
 
         a {
@@ -239,7 +250,6 @@ h3 {
             margin-left: 15%;
         }
     }
-
 }
 
 .contactdiv {
@@ -252,7 +262,7 @@ h3 {
     background: linear-gradient(rgb(184, 78, 39) 0%, rgb(184, 78, 39) 98%, rgb(237, 19, 19) 99%, rgb(255, 0, 0) 100%);
     min-width: 46.95vw;
     width: 46.95vw;
-    z-index: 0;
+    /* z-index: 0; */
 
     .footer {
         /* padding-inline: 4%; */
@@ -331,6 +341,16 @@ h3 {
 @keyframes fade {
     0% {
         opacity: 0.1;
+    }
+
+    25% {
+        opacity: 0.5;
+        /* rotate: 180deg; */
+    }
+
+    50% {
+        opacity: 0.9;
+        /* rotate:-180deg; */
     }
 
     /* Fade to transparent at 50% */
@@ -490,4 +510,19 @@ img {
         font-size: 4.5rem;
         margin-top: 16%;
     }
+}
+
+.productpara {
+    font-size: 1.2rem;
+}
+
+.contactdiv:hover {
+    overflow: hidden;
+    height: 100vh;
+    position: fixed;
+    background-color: transparent;
+    transition: background-color 0.75s;
+    z-index: 999;
+    width: 46.95vw;
+    transform-origin: 50% 50% 0px;
 }

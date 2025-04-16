@@ -1,3 +1,5 @@
+<app-sidebar></app-sidebar>
+<!-- <app-video></app-video> -->
 <div class="" style="display: flex; height: 100%; flex-direction: row;">
     <div id="colorbox-desktop" class="sidebars">
         <img src="/assets/logo.png" id="myDiv" class="logoimage" alt="Logo image">
@@ -8,12 +10,12 @@
                         <li [routerLink]="['/Video']">Introduction</li>
                     </a>
                     <a href="#Home">
-                        <li  [routerLink]="['/Home']">Home</li>
+                        <li [routerLink]="['/Home']">Home</li>
                     </a>
                     <a href="#About">
                         <li [routerLink]="['/About']">About</li>
                     </a>
-                    <a href="#Products" >
+                    <a href="#Products">
                         <li [routerLink]="['/Our-products']">Our Product</li>
                     </a>
                     <a href="#Contact">
@@ -24,15 +26,33 @@
                     <a href="#Nylon-granules">
                         <li>Nylon Granules</li>
                     </a>
-                    <a href="#Acrylonitrile"><li>Acrylonitrile Butadiene Styrene </li></a>
-                    <a href="#Polypropylene"><li>Polypropylene (PP)              </li></a>
-                    <a href="#Polyoxymethylene"><li>Polyoxymethylene (POM)          </li></a>
-                    <a href="#Polycarbonates"><li>Polycarbonates (PC)             </li></a>
-                    <a href="#Poly_Methyl_Methacrylate"><li>Poly Methyl Methacrylate (PMMA) </li></a>
-                    <a href="#Poly_Vinyl_Chloride"><li>Poly Vinyl Chloride (PVC)       </li></a>
-                    <a href="#Polystyrene"><li>Polystyrene (PS)                </li></a>
-                    <a href="#Polybutylene_Terephthalate"><li>Polybutylene Terephthalate (PBT)</li></a>
-                    <a href="#Polyethylene"><li>Polyethylene (PE)               </li></a>
+                    <a href="#Acrylonitrile">
+                        <li>Acrylonitrile Butadiene Styrene </li>
+                    </a>
+                    <a href="#Polypropylene">
+                        <li>Polypropylene (PP) </li>
+                    </a>
+                    <a href="#Polyoxymethylene">
+                        <li>Polyoxymethylene (POM) </li>
+                    </a>
+                    <a href="#Polycarbonates">
+                        <li>Polycarbonates (PC) </li>
+                    </a>
+                    <a href="#Poly_Methyl_Methacrylate">
+                        <li>Poly Methyl Methacrylate (PMMA) </li>
+                    </a>
+                    <a href="#Poly_Vinyl_Chloride">
+                        <li>Poly Vinyl Chloride (PVC) </li>
+                    </a>
+                    <a href="#Polystyrene">
+                        <li>Polystyrene (PS) </li>
+                    </a>
+                    <a href="#Polybutylene_Terephthalate">
+                        <li>Polybutylene Terephthalate (PBT)</li>
+                    </a>
+                    <a href="#Polyethylene">
+                        <li>Polyethylene (PE) </li>
+                    </a>
                 </ul>
             </div>
 
@@ -45,19 +65,25 @@
                 </div>
                 <br>
                 <ul class="menu">
-                    <li><a href="https://www.facebook.com/" target="_blank"><i
-                                class="fa-brands fa-facebook-f fa-xl "></i></a>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank"><i
+                                class="fa-brands fa-facebook-f fa-xl "></i>
+                        </a>
                     </li>
-                    <li><a href="https://www.linkedin.com/" target="_blank" viewBox="0 0 51 51"><i
-                                class="fa-brands fa-linkedin-in fa-xl"></i></a>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank" viewBox="0 0 51 51"><i
+                                class="fa-brands fa-linkedin-in fa-xl"></i>
+                        </a>
                     </li>
-                    <li><a href="https://www.youtube.com/" target="_blank"><i
-                                class="fa-brands fa-youtube fa-xl"></i></a>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
+
     <div class="">
         <div class="bg-image">
             <img src="/assets/background.jpg" class="img-fluid" alt="Sample" />
@@ -76,7 +102,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-9">
@@ -93,7 +118,6 @@
                     </div>
                     <br><br>
                     <div class="row">
-
                         <div class="col-md-2">
                             <div class="divss">
                                 <!-- <h3>Our Activities</h3><br> -->
@@ -137,9 +161,12 @@
 
                     </div>
                     <br>
-                    <img src="/assets/about/about_1.jpg" alt=""> <br><br>
-
-                    <div class="container"> <!-- Testimonials Section-->
+                    <img src="/assets/about/about_1.jpg" alt="">
+                    <br><br>
+                    <app-products></app-products>
+                    <br>
+                    <!-- Testimonials Section-->
+                    <div class="container">
                         <h2>Testimonials :</h2>
                         <p class="p">Our innovative technology and quest for a greener tomorrow have garnered
                             attention
@@ -258,6 +285,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -387,10 +415,10 @@
             </div>
             <br>
         </div>
-    </div><br><br><br>
-
+    </div>
+    <br><br><br>
 </div>
-
+<!-- <app-footer></app-footer> -->
 <div class="" style="display: flex; height: 100%; flex-direction: row;">
     <div id="colorbox-desktop" class="productdiv">
     </div>
@@ -406,7 +434,7 @@
         <div class="container-fluid">
             <div id="Nylon-granules">
                 <h3> 1. Nylon Granules :</h3>
-                <p>
+                <p class="productpara">
                     We are Manufacturer, Supplier, Exporter of Nylon Granules, Nylon 6 Unfilled Granules, Nylon
                     6
                     Glassfilled Granules, Nylon 66 Glassfilles Granules, Nylon 66 Granules, Nylon 66 Technyl
@@ -466,7 +494,7 @@
             <br>
             <div id="Acrylonitrile" class="abs">
                 <h3> 2. Acrylonitrile Butadiene Styrene (ABS) :</h3> <br>
-                <p>
+                <p class="productpara">
                     We are Manufacturer, Supplier, Exporter of Acrylonitrile Butadiene Styrene Granules, ABS
                     Granules, Flame Retardant ABS Granules, ABS Natural Granules, ABS Extrusion Sheet Granules,
                     ABS Virgin LG Bhansali Absolac Sabic Starex Chimei, ABS Reprocessed Black Dana Granules, ABS
@@ -507,7 +535,7 @@
             <br>
             <div id="Polypropylene" class="pp">
                 <h3> 3. Polypropylene (PP) </h3> <br>
-                <p>
+                <p class="productpara">
                     We are Manufacturer, Supplier, Exporter of Polypropylene Granules, PP Granules, PPCP Black,
                     Yellow, Blue,Green Granules, PP Talc Filled Granules, PP Glass Filled Granules, PPCP
                     Reprocessed Black and our setup is situated in Pune, Maharashtra, India.
@@ -547,7 +575,8 @@
             <br>
             <div id="Polyoxymethylene" class="pom">
                 <h3> 4. Polyoxymethylene (POM) </h3> <br>
-                <p>We are Manufacturer, Supplier, Exporter of Polyoxymethylene Granules, POM Plastic Granules
+                <p class="productpara">We are Manufacturer, Supplier, Exporter of Polyoxymethylene Granules, POM Plastic
+                    Granules
                     and our setup is situated in Pune, Maharashtra, India.
                     <br><br>
                     POM is a material of an excellent quality with features of excellent
@@ -583,7 +612,8 @@
             <br>
             <div class="pc" id="Polycarbonates">
                 <h3>5. Polycarbonates (Pc) </h3> <br>
-                <p>We are Manufacturer, Supplier, Exporter of Polycarbonate Granules, PC Granules, Polycarbonate
+                <p class="productpara">We are Manufacturer, Supplier, Exporter of Polycarbonate Granules, PC Granules,
+                    Polycarbonate
                     Natural Granules, Polycarbonate Black Granules and our setup is situated in Pune,
                     Maharashtra, India.
                     <br><br>
@@ -620,7 +650,8 @@
             <br>
             <div class="PMMA" id="Poly_Methyl_Methacrylate">
                 <h3>6. Poly Methyl Methacrylate (PMMA) </h3> <br>
-                <p>We are Manufacturer, Supplier, Exporter of Polymethyl Methacrylate Granules, PMMA Plastic
+                <p class="productpara">We are Manufacturer, Supplier, Exporter of Polymethyl Methacrylate Granules, PMMA
+                    Plastic
                     Granules, PMMA Granules, PMMA Natural Granules, PMMA Red Granules and our setup is situated
                     in Pune, Maharashtra, India.
                     <br><br>
@@ -656,7 +687,8 @@
             <br>
             <div class="pvc" id="Poly_Vinyl_Chloride">
                 <h3>7. Poly Vinyl Chloride (PVC)</h3> <br>
-                <p>We are Manufacturer, Supplier, Exporter of Poly Vinyl Chloride Granules, PVC Granules, PVC
+                <p class="productpara">We are Manufacturer, Supplier, Exporter of Poly Vinyl Chloride Granules, PVC
+                    Granules, PVC
                     Black Granules, Natural PVC Granules, PVC Colored Granules, PVC Transparent Granules and our
                     setup is situated in Pune, Maharashtra, India.
                     <br><br>
@@ -694,7 +726,8 @@
             <br>
             <div id="Polystyrene" class="ps">
                 <h3>8. Polystyrene (PS)</h3> <br>
-                <p>We are Manufacturer, Supplier, Exporter of Polystyrene Granules, PS Granules, HIPS Granules,
+                <p class="productpara">We are Manufacturer, Supplier, Exporter of Polystyrene Granules, PS Granules,
+                    HIPS Granules,
                     GPPS Granules and our setup is situated in Pune, Maharashtra, India.
                     <br><br>A transparent polymer used in a variety of applications, such as food packaging and
                     appliances. Polystyrene foams are used for thermal insulation and protective packaging.
@@ -728,7 +761,8 @@
             <br>
             <div id="Polybutylene_Terephthalate" class="pbt">
                 <h3>9. Polybutylene Terephthalate (PBT)</h3> <br>
-                <p>We are Manufacturer, Supplier, Exporter of Polybutylene Terephthalate Granules, PBT Granules,
+                <p class="productpara">We are Manufacturer, Supplier, Exporter of Polybutylene Terephthalate Granules,
+                    PBT Granules,
                     PBT Natural Granules, PBT Black Granules, PBT Glass Filled Granules, PBT Unfilled
                     GlassFilled Natural Black and our setup is situated in Pune, Maharashtra, India.
                     <br><br>Dimensional stability, low warpage, weatherable, excellent chemical resistance and
@@ -763,7 +797,8 @@
             <br>
             <div id="Polyethylene" class="pe">
                 <h3>10. Polyethylene (PE)</h3> <br>
-                <p>We are Manufacturer, Supplier, Exporter of Polyethylene Granules, PE Granules, HDPE Granules,
+                <p class="productpara">We are Manufacturer, Supplier, Exporter of Polyethylene Granules, PE Granules,
+                    HDPE Granules,
                     LDPE Granules, LLDPE Granules and our setup is situated in Pune, Maharashtra, India.
                     <br><br>Complete range of HDPE, LDPE and LLDPE for Flexible and Rigid
                 </p>
@@ -799,7 +834,7 @@
 </div>
 
 <div class="" style="display: flex; height: 100%; flex-direction: row;">
-    <div  id="colorbox-desktop"  class="contactdiv">
+    <div id="colorbox-desktop" class="contactdiv">
     </div>
     <div class="divc" id="Contact">
         <div class="contactsection">

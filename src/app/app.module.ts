@@ -10,6 +10,8 @@ import { ContactusComponent } from './pages/contactus/contactus.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { VideoComponent } from './pages/video/video.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DragScrollComponent, DragScrollItemDirective } from 'ngx-drag-scroll';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,11 @@ import { VideoComponent } from './pages/video/video.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    DragScrollComponent,
+    DragScrollItemDirective
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -28,7 +28,6 @@ export class HomeComponent implements OnInit, AfterViewInit {
     //     transformOrigin: "left center",
     //     ease: "none"
     //   });
-
     //   gsap.from(".line-2", {
     //     scrollTrigger: {
     //       trigger: ".orange",

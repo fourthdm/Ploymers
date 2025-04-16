@@ -10,3 +10,14 @@
   height: 100%;
   /* z-index: 10; */
 }
+
+@media(max-width:439px){
+  .video-frame {
+    position: fixed;
+    top: 0;
+    left: 10;
+    width: auto;
+    height: 100%;
+    /* z-index: 10; */
+  }
+}

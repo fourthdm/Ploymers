@@ -1,0 +1,32 @@
+.css-5x6ly7 {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: flex;
+    flex: 1 1 0%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-d3l3vl {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 3fr 3fr;
+    width: 46.95vw;
+}
+
+.css-bfht7h {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    font-family: ABCFavorit, sans-serif;
+    font-weight: 700;
+    font-size: 5.87vw;
+    line-height: 5.87vw;
+    letter-spacing: -0.05em;
+    color: white;
+    cursor: pointer;
+}

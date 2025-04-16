@@ -1,11 +1,27 @@
 .button {
-    position: fixed;
-    bottom: 5px;
-    right: 0;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 5px;
-    outline: none;
-    z-index: 1;
-    color: rgb(250, 70, 70);
-  }
+  position: fixed;
+  bottom: 5px;
+  right: 0;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  z-index: 1;
+  color: rgb(250, 70, 70);
+}
+
+.buttons {
+  position: fixed;
+  bottom: 7%;
+  right: 0;
+  font-size: 22px;
+  text-align: center;
+  border-radius: 5px;
+  outline: none;
+  z-index: 1;
+  color: rgb(250, 70, 70);
+}
+
+.fa-whatsapp{
+  color: #25D366;
+}

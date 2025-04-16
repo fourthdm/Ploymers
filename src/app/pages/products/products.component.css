@@ -1,0 +1,24 @@
+drag-scroll {
+    height: 40vh;
+    /* width: 80vw; */
+
+    img {
+        padding: 5%;
+        width: 100%;
+    }
+}
+
+.mains {
+    background-color: red;
+}
+
+.numtext {
+    font-size: larger;
+    color: white;
+}
+
+.num {
+    background-color: rgb(247, 245, 245);
+    height: 5%;
+
+}
