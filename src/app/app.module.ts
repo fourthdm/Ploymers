@@ -12,6 +12,7 @@ import { ProductsComponent } from './pages/products/products.component';
 import { VideoComponent } from './pages/video/video.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DragScrollComponent, DragScrollItemDirective } from 'ngx-drag-scroll';
+import { MainpageComponent } from './pages/mainpage/mainpage.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { DragScrollComponent, DragScrollItemDirective } from 'ngx-drag-scroll';
     ContactusComponent,
     AboutComponent,
     ProductsComponent,
-    VideoComponent
+    VideoComponent,
+    MainpageComponent
   ],
   imports: [
     BrowserModule,

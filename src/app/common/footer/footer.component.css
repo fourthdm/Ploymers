@@ -1,3 +1,36 @@
+.css-5v7lsm {
+    width: 46.95vw;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1.05vw;
+}
+
+.css-ydn545 {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 2fr 5fr;
+}
+
+.css-vurnku {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+}
+
+.css-d5oeo0 {
+    box-sizing: border-box;
+    margin: -1.05vw 0px 0px -1.05vw;
+    min-width: 0px;
+    width: 50%;
+    cursor: pointer;
+}
+
 .css-5x6ly7 {
     box-sizing: border-box;
     margin: 0px;

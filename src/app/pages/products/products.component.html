@@ -1,9 +1,12 @@
 <div class="mains">
-    <drag-scroll #nav [drag-disabled]="true" [scrollbar-hidden]="true">
+    <drag-scroll #nav>
+        <div drag-scroll-item>
+            <div class="num"></div>
+        </div>
         <div drag-scroll-item>
             <img src="/assets/process/1.png" />
             <div class="text-center">
-                <div class="num" (click)="moveRight()"><br></div>
+                <div class="num" ><br></div>
                 <p class="numtext">1 <br>
                     Collection</p>
             </div>
@@ -11,7 +14,7 @@
         <div drag-scroll-item>
             <img src="/assets/process/2.png" />
             <div class="text-center">
-                <div class="num" (click)="moveRight()"><br></div>
+                <div class="num" ><br></div>
                 <p class="numtext">2 <br>
                     Sorting</p>
             </div>
@@ -19,7 +22,7 @@
         <div drag-scroll-item>
             <img src="/assets/process/3.png" />
             <div class="text-center">
-                <div class="num" (click)="moveRight()"><br></div>
+                <div class="num" ><br></div>
                 <p class="numtext">3 <br>
                     Crushing</p>
             </div>
@@ -27,7 +30,7 @@
         <div drag-scroll-item>
             <img src="/assets/process/4.png" />
             <div class="text-center">
-                <div class="num" (click)="moveRight()"><br></div>
+                <div class="num" ><br></div>
                 <p class="numtext">4 <br>
                     Washing</p>
             </div>
@@ -35,7 +38,7 @@
         <div drag-scroll-item>
             <img src="/assets/process/5.png" />
             <div class="text-center">
-                <div class="num" (click)="moveLeft()"><br></div>
+                <div class="num" ><br></div>
                 <p class="numtext">5 <br>
                     Mixing</p>
             </div>
@@ -43,12 +46,12 @@
         <div drag-scroll-item>
             <img src="/assets/process/6.png" />
             <div class="text-center">
-                <div class="num" (click)="moveLeft()"><br></div>
+                <div class="num" ><br></div>
                 <p class="numtext">6 <br>
                     Extrusion</p>
             </div>
         </div>
     </drag-scroll>
     <!-- <button ><i class="fa-solid fa-arrow-left"></i></button> -->
-    <!-- <button (click)="moveRight()"><i class="fa-solid fa-arrow-right"></i></button> -->
+    <!-- <button ><i class="fa-solid fa-arrow-right"></i></button> -->
 </div>

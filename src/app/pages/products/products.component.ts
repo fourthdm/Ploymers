@@ -29,7 +29,7 @@ export class ProductsComponent implements AfterViewInit {
   ngAfterViewInit() {
     // Starting ngx-drag-scroll from specified index(3)
     setTimeout(() => {
-      this.ds.moveTo(1);
+      this.ds.moveTo(0);
     }, 1000);
   }
 }

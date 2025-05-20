@@ -12,7 +12,7 @@ export class VideoComponent implements OnInit {
 
   @ViewChild('frameImage', { static: true }) frameImageRef!: ElementRef<HTMLImageElement>;
 
-  totalFrames = 824;
+  totalFrames = 820;
   currentFrame = 19;
   currentFrameSrc = this.getFrameSrc(19);
 
@@ -25,16 +25,37 @@ export class VideoComponent implements OnInit {
     return `assets/images/${paddedFrame}.jpg`; // adjust path
   }
 
+  // setupScrollTrigger() {
+  //   gsap.to(this, {
+  //     currentFrame: this.totalFrames - 1,
+  //     snap: 'currentFrame',
+  //     ease: 'none',
+  //     scrollTrigger: {
+  //       scrub: 0.3,
+  //       trigger: '.scroll-video-wrapper',
+  //       start: 'top top',
+  //       end: 'bottom bottom'
+  //     },
+  //     onUpdate: () => {
+  //       this.currentFrameSrc = this.getFrameSrc(Math.round(this.currentFrame));
+  //     }
+  //   });
+  // }
+
   setupScrollTrigger() {
+    const videoWrapper = document.querySelector('.scroll-video-wrapper');
+
     gsap.to(this, {
       currentFrame: this.totalFrames - 1,
       snap: 'currentFrame',
       ease: 'none',
       scrollTrigger: {
-        scrub: 0.3,
-        trigger: '.scroll-video-wrapper',
+        trigger: videoWrapper,
         start: 'top top',
-        end: 'bottom bottom'
+        end: '+=3000', // adjust based on scroll distance needed
+        scrub: 0.3,
+        pin: videoWrapper,
+        anticipatePin: 1,
       },
       onUpdate: () => {
         this.currentFrameSrc = this.getFrameSrc(Math.round(this.currentFrame));

@@ -1,0 +1,161 @@
+.desktop {
+    min-width: 13.96vw;
+    width: 13.96vw;
+}
+
+.desktop:hover {
+    min-width: 46.95vw;
+    width: 46.95vw;
+
+    .logoimage {
+        width: 10%;
+    }
+
+    .css-unl981 {
+        box-sizing: border-box;
+        margin: 0px;
+        min-width: 0px;
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+
+    .laptopview {
+        display: none;
+    }
+
+    .css-5v7lsm {
+        width: 46.95vw;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        height: 100%;
+        padding: 1.05vw;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.logoimage {
+    width: 10%;
+    position: fixed;
+}
+
+.css-5x6ly7 {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: flex;
+    flex: 1 1 0%;
+    -webkit-box-align: center;
+    align-items: center;
+    /* margin-top: 40%; */
+    /* position: fixed; */
+}
+
+.css-d3l3vl {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 3fr 3fr;
+    width: 46.95vw;
+}
+
+.css-unl981 {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+.css-vurnku {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+}
+
+.css-1reuo1k {
+    color: white;
+    font-size: 25px;
+}
+
+.css-bfht7h {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    font-family: ABCFavorit, sans-serif;
+    font-weight: 200;
+    font-size: 5.87vw;
+    line-height: 5.87vw;
+    letter-spacing: -0.05em;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1080px) {
+    .css-bfht7h {
+        font-size: 2.1vw;
+        line-height: 2.1vw;
+        letter-spacing: -0.04em;
+    }
+}
+
+
+.css-1x02del {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 3fr 3fr;
+    position: relative;
+}
+
+.css-enhan1 {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 8px;
+}
+
+.laptopview {
+    display: block;
+}
+
+
+@media screen and (min-width: 1080px) {
+    .css-5v7lsm {
+        padding: 1.05vw 4vw 1.3vw 1.05vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .css-5v7lsm {
+        padding: 1.715vw;
+    }
+}
+
+.css-5v7lsm {
+    /* width: 46.95vw;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 100%;
+    padding: 1.05vw; */
+    display: none;
+}

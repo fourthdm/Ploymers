@@ -1,98 +1,172 @@
-<app-sidebar></app-sidebar>
+<!-- <app-sidebar class="nav"></app-sidebar> -->
 <!-- <app-video></app-video> -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <div class="" style="display: flex; height: 100%; flex-direction: row;">
-    <div id="colorbox-desktop" class="sidebars">
+    <div class="deskstop" id="colorbox-desktop"
+        style="background: linear-gradient(rgb(0, 58, 188) 0%, rgb(0, 58, 188) 98%, rgb(4, 110, 154) 99%, rgb(9, 162, 120) 100%);" >
         <img src="/assets/logo.png" id="myDiv" class="logoimage" alt="Logo image">
-        <div class="side">
-            <div class="navlinkss">
-                <ul>
-                    <a href="#Intro">
-                        <li [routerLink]="['/Video']">Introduction</li>
+        <!-- Left side - Static colored background only -->
+
+        <!-- Right side - Hover effect with nav menu -->
+        <div class="deskstop-right">
+            <!-- <img src="/assets/logo.png" id="myDiv" class="logoimage" alt="Logo image"> -->
+
+            <div class="side">
+                <div class="navlinkss">
+                    <ul>
+                        <a href="#Intro">
+                            <li [routerLink]="['/Video']">Introduction</li>
+                        </a>
+                        <a href="#Home">
+                            <li [routerLink]="['/Home']">Home</li>
+                        </a>
+                        <a href="#About">
+                            <li [routerLink]="['/About']">About</li>
+                        </a>
+                        <a href="#Products">
+                            <li [routerLink]="['/Our-products']">Our Product</li>
+                        </a>
+                        <a href="#Contact">
+                            <li [routerLink]="['/Contact-us']">Contact </li>
+                        </a>
+                    </ul>
+                    <div class="navproduct">
+                        <a href="#Nylon-granules">
+                            <li>Nylon Granules</li>
+                        </a>
+                        <a href="#Acrylonitrile">
+                            <li>Acrylonitrile Butadiene Styrene </li>
+                        </a>
+                        <a href="#Polypropylene">
+                            <li>Polypropylene (PP) </li>
+                        </a>
+                        <a href="#Polyoxymethylene">
+                            <li>Polyoxymethylene (POM) </li>
+                        </a>
+                        <a href="#Polycarbonates">
+                            <li>Polycarbonates (PC) </li>
+                        </a>
+                        <a href="#Poly_Methyl_Methacrylate">
+                            <li>Poly Methyl Methacrylate (PMMA) </li>
+                        </a>
+                        <a href="#Poly_Vinyl_Chloride">
+                            <li>Poly Vinyl Chloride (PVC) </li>
+                        </a>
+                        <a href="#Polystyrene">
+                            <li>Polystyrene (PS) </li>
+                        </a>
+                        <a href="#Polybutylene_Terephthalate">
+                            <li>Polybutylene Terephthalate (PBT)</li>
+                        </a>
+                        <a href="#Polyethylene">
+                            <li>Polyethylene (PE) </li>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="privacypolicy">
+                        <h5>Privacy Policy</h5>
+                        <h5>Designed by <a href="https://fourthdm.in/" target="_blank">FourthDm</a></h5>
+                        <h5>Developed by <a href="https://fourthdm.com/" target="_blank">FourthDm</a></h5>
+                        <p> &copy;SSB 2025</p>
+                    </div>
+                    <br>
+                    <!-- <ul class="menu">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><i
+                            class="fa-brands fa-facebook-f fa-xl "></i>
                     </a>
-                    <a href="#Home">
-                        <li [routerLink]="['/Home']">Home</li>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank" viewBox="0 0 51 51"><i
+                            class="fa-brands fa-linkedin-in fa-xl"></i>
                     </a>
-                    <a href="#About">
-                        <li [routerLink]="['/About']">About</li>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i>
                     </a>
-                    <a href="#Products">
-                        <li [routerLink]="['/Our-products']">Our Product</li>
-                    </a>
-                    <a href="#Contact">
-                        <li [routerLink]="['/Contact-us']">Contact </li>
-                    </a>
-                </ul>
-                <ul class="navproduct">
-                    <a href="#Nylon-granules">
-                        <li>Nylon Granules</li>
-                    </a>
-                    <a href="#Acrylonitrile">
-                        <li>Acrylonitrile Butadiene Styrene </li>
-                    </a>
-                    <a href="#Polypropylene">
-                        <li>Polypropylene (PP) </li>
-                    </a>
-                    <a href="#Polyoxymethylene">
-                        <li>Polyoxymethylene (POM) </li>
-                    </a>
-                    <a href="#Polycarbonates">
-                        <li>Polycarbonates (PC) </li>
-                    </a>
-                    <a href="#Poly_Methyl_Methacrylate">
-                        <li>Poly Methyl Methacrylate (PMMA) </li>
-                    </a>
-                    <a href="#Poly_Vinyl_Chloride">
-                        <li>Poly Vinyl Chloride (PVC) </li>
-                    </a>
-                    <a href="#Polystyrene">
-                        <li>Polystyrene (PS) </li>
-                    </a>
-                    <a href="#Polybutylene_Terephthalate">
-                        <li>Polybutylene Terephthalate (PBT)</li>
-                    </a>
-                    <a href="#Polyethylene">
-                        <li>Polyethylene (PE) </li>
-                    </a>
-                </ul>
+                </li>
+            </ul> -->
+                </div>
             </div>
 
-            <div class="footer">
-                <div class="privacypolicy">
-                    <h5>Privacy Policy</h5>
-                    <h5>Designed by <a href="https://fourthdm.in/" target="_blank">FourthDm</a></h5>
-                    <h5>Developed by <a href="https://fourthdm.com/" target="_blank">FourthDm</a></h5>
-                    <p> &copy;SSB 2025</p>
-                </div>
-                <br>
-                <ul class="menu">
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank"><i
-                                class="fa-brands fa-facebook-f fa-xl "></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/" target="_blank" viewBox="0 0 51 51"><i
-                                class="fa-brands fa-linkedin-in fa-xl"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube fa-xl"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
 
     <div class="">
+        <div class="">
+            <div class="laptopview">
+                <div class="scroll-video-wrapper">
+                    <div class="spacer" style="height: 4000px;"></div> <!-- scroll area -->
+                    <img #frameImage class="video-frame" [src]="currentFrameSrc" />
+                </div>
+            </div>
+
+            <!-- <div class="mobilewrapper">
+                <div class="scroll-video-wrapper">
+                    <div class="spacer" style="height: 4000px;"></div> 
+                    <img #frameImage class="video-frame" [src]="currentframe" />
+                </div>
+            </div> -->
+
+            <!-- <div class="scroll-video-wrapper">
+                <div class="video-container">
+                    <img #frameImage class="video-frame" [src]="currentFrameSrc" />
+                </div>
+                <div class="spacer" style="height: 4000px;"></div>
+            </div> -->
+        </div>
+
         <div class="bg-image">
-            <img src="/assets/background.jpg" class="img-fluid" alt="Sample" />
+            <img src="/assets/background.jpg" class="img-fluid img" alt="Sample" />
+            <img src="/assets/bgmobile.jpg" class="img-fluid images" alt="Sample" />
             <div class="mask">
                 <div class="d-flex justify-content-end">
                     <p class="ssb">SSB POLYMERS</p>
                 </div>
+                <div class="text-center ssbm">
+                    <p class="ssbm">SSB</p>
+                </div>
             </div>
         </div>
+
+
+
         <div class="description">
             <div id="About">
                 <div class="aboutsection">
@@ -174,7 +248,7 @@
                             received nods of approval from various press and media outlets.</p>
                         <br>
                         <div class="row">
-                            <div class="col-md-3"></div>
+                            <div class="col-md-3 "></div>
                             <br>
                             <div class="col-md-3">
                                 <div class="card">
@@ -248,6 +322,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -268,6 +343,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -304,6 +380,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -420,8 +497,75 @@
 </div>
 <!-- <app-footer></app-footer> -->
 <div class="" style="display: flex; height: 100%; flex-direction: row;">
-    <div id="colorbox-desktop" class="productdiv">
+    <div id="colorbox-desktop" class="deskstop"
+        style="background:linear-gradient(rgb(9, 162, 120) 0%, rgb(9, 162, 120) 98%, rgb(96, 120, 79) 99%, rgb(184, 78, 39) 100%)">
+
+        <img src="/assets/logo.png" id="myDiv" class="logoimage" alt="Logo image">
+        <div class="side">
+            <div class="navlinkss">
+                <ul>
+                    <a href="#Intro">
+                        <li [routerLink]="['/Video']">Introduction</li>
+                    </a>
+                    <a href="#Home">
+                        <li [routerLink]="['/Home']">Home</li>
+                    </a>
+                    <a href="#About">
+                        <li [routerLink]="['/About']">About</li>
+                    </a>
+                    <a href="#Products">
+                        <li [routerLink]="['/Our-products']">Our Product</li>
+                    </a>
+                    <a href="#Contact">
+                        <li [routerLink]="['/Contact-us']">Contact </li>
+                    </a>
+                </ul>
+                <ul class="navproduct">
+                    <a href="#Nylon-granules">
+                        <li>Nylon Granules</li>
+                    </a>
+                    <a href="#Acrylonitrile">
+                        <li>Acrylonitrile Butadiene Styrene </li>
+                    </a>
+                    <a href="#Polypropylene">
+                        <li>Polypropylene (PP) </li>
+                    </a>
+                    <a href="#Polyoxymethylene">
+                        <li>Polyoxymethylene (POM) </li>
+                    </a>
+                    <a href="#Polycarbonates">
+                        <li>Polycarbonates (PC) </li>
+                    </a>
+                    <a href="#Poly_Methyl_Methacrylate">
+                        <li>Poly Methyl Methacrylate (PMMA) </li>
+                    </a>
+                    <a href="#Poly_Vinyl_Chloride">
+                        <li>Poly Vinyl Chloride (PVC) </li>
+                    </a>
+                    <a href="#Polystyrene">
+                        <li>Polystyrene (PS) </li>
+                    </a>
+                    <a href="#Polybutylene_Terephthalate">
+                        <li>Polybutylene Terephthalate (PBT)</li>
+                    </a>
+                    <a href="#Polyethylene">
+                        <li>Polyethylene (PE) </li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <div class="privacypolicy">
+                    <h5>Privacy Policy</h5>
+                    <h5>Designed by <a href="https://fourthdm.in/" target="_blank">FourthDm</a></h5>
+                    <h5>Developed by <a href="https://fourthdm.com/" target="_blank">FourthDm</a></h5>
+                    <p> &copy;SSB 2025</p>
+                </div>
+                <br>
+            </div>
+        </div>
     </div>
+
     <section class="red" id="Products">
         <div class="productsection">
             <div class="products">
@@ -436,19 +580,13 @@
                 <h3> 1. Nylon Granules :</h3>
                 <p class="productpara">
                     We are Manufacturer, Supplier, Exporter of Nylon Granules, Nylon 6 Unfilled Granules, Nylon
-                    6
-                    Glassfilled Granules, Nylon 66 Glassfilles Granules, Nylon 66 Granules, Nylon 66 Technyl
-                    Unfilled
-                    GlassFilled, Nylon 6 Virgin Reprocessed, Nylon Natural Black Unfilled GlassFilled and our
-                    setup
-                    is
-                    situated in Pune, Maharashtra, India.
+                    6 Glassfilled Granules, Nylon 66 Glassfilles Granules, Nylon 66 Granules, Nylon 66 Technyl
+                    Unfilled GlassFilled, Nylon 6 Virgin Reprocessed, Nylon Natural Black Unfilled GlassFilled and our
+                    setup is situated in Pune, Maharashtra, India.
                     <br><br>
                     Nylon is the plastic material based on polyamide-6 that is a thermoplastic resin with
-                    excellent
-                    mechanical, thermal and electrical properties. Nylon is widely used in the manufacture of
-                    automobile
-                    and industrial parts.
+                    excellent mechanical, thermal and electrical properties. Nylon is widely used in the
+                    manufacture of automobile and industrial parts.
                 </p>
                 <br>
                 <h4>Range :</h4>
@@ -834,7 +972,8 @@
 </div>
 
 <div class="" style="display: flex; height: 100%; flex-direction: row;">
-    <div id="colorbox-desktop" class="contactdiv">
+    <div id="colorbox-desktop" class="deskstop"
+        style="background: linear-gradient(rgb(184, 78, 39) 0%, rgb(184, 78, 39) 98%, rgb(237, 19, 19) 99%, rgb(255, 0, 0) 100%);">
     </div>
     <div class="divc" id="Contact">
         <div class="contactsection">
@@ -844,6 +983,111 @@
                 </div>
             </div>
         </div>
-        <app-contactus></app-contactus>
+        <br>
+        <div class="container-fluid">
+            <div class="text-center">
+                <h1><b>Contact Us</b></h1>
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Address : </h4>
+                    <p class="p">Plot No. 71 / 1B / 06, Gala No. 6, Paras Industrial Estate,<br>
+                        T General Block, MIDC, Bhosari, Pune - 411026, Maharashtra, India.</p>
+                    <br>
+                    <h4>Mobile No. : </h4>
+                    <p class="p">+ 91 - 94225 16258 / 86986 73519 </p>
+                    <br>
+                    <h4>Email : </h4>
+                    <p class="p">response&#64;ssbpolymers.com</p>
+                    <br>
+                    <div class="css-enhan1">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"
+                            style="line-height: 0;"><svg width="51" height="51" viewBox="0 0 51 51" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="css-efac2s">
+                                <circle cx="25.5" cy="25.5" r="25" stroke="red"></circle>
+                                <g clip-path="url(#clip0)">
+                                    <path
+                                        d="M27.6 10.1C27.9 10.1 28.7 10.1 29 10.1C30.1 10.1 31.8 9.99999 33 10.1V15.1H29C27.5 15 27 15.4 27 17V21H32V26H27V40H22V26H18V21H22L21.9 16.6C21.9 13.5 22.5 11.7 25 10.6C25.7 10.3 26.7 10.1 27.6 10.1Z"
+                                        fill="red"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="15" height="30" fill="red" transform="translate(18 10)">
+                                        </rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"
+                            style="line-height: 0;"><svg width="51" height="51" viewBox="0 0 51 51" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="css-efac2s">
+                                <circle cx="25.5" cy="25.5" r="25" stroke="red"></circle>
+                                <path d="M19.2002 19.1H13.2002V36.1H19.2002V19.1Z" fill="red"></path>
+                                <path
+                                    d="M33.2998 18.6C34.9998 18.6 37.1998 19.4 38.4998 20.8C39.8998 22.3 40.1998 24.1 40.1998 26.2V36.2H34.1998V26.9C34.1998 25.2 33.4998 23.1 31.2998 23.1C29.9998 23.1 29.0998 23.9 28.4998 25.2C28.2998 25.6 28.3998 26.1 28.3998 26.6L28.2998 36.3H22.2998V19.3H28.2998L28.3998 21.5C28.7998 20.8 29.3998 20.2 30.0998 19.7C30.9998 18.9 32.0998 18.6 33.2998 18.6Z"
+                                    fill="red"></path>
+                                <path
+                                    d="M16.2 11C17.7 11 19.3 12.2 19.3 14.1C19.3 15.7 17.9 17.2 16.1 17.2C14.6 17.2 13.1 16 13 14.1C13 12.4 14.4 11 16.2 11Z"
+                                    fill="red"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" style="line-height: 0;">
+                            <svg width="51" height="51" viewBox="0 0 51 51" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="css-efac2s">
+                                <circle cx="25.5" cy="25.5" r="25" stroke="red"></circle>
+                                <path
+                                    d="M40.3482 17.432C40.0009 16.068 38.9589 15.012 37.613 14.66C35.2251 14 25.4997 14 25.4997 14C25.4997 14 15.8178 14 13.3865 14.66C12.084 15.012 10.9986 16.112 10.6512 17.476C10 19.896 10 25 10 25C10 25 10 30.104 10.6512 32.568C10.9986 33.932 12.0406 34.988 13.3865 35.34C15.8178 36 25.4997 36 25.4997 36C25.4997 36 35.2251 36 37.613 35.34C38.9589 34.988 40.0009 33.932 40.3482 32.568C40.9995 30.104 40.9995 25 40.9995 25C40.9995 25 41.0429 19.896 40.3482 17.432ZM22.4172 29.708V20.292L30.4926 25L22.4172 29.708Z"
+                                    fill="red"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <br>
+                </div><br>
+                <div class="col-md-6">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="name">Name:</label><br>
+                                <input type="text" id="name" name="name" placeholder="Enter your name">
+                            </div><br>
+                            <br><br>
+                            <div class="col-6">
+                                <label for="email">Email:</label><br>
+                                <input type="text" id="email" name="email" placeholder="Enter your email">
+                            </div><br>
+                            <br><br>
+                            <div class="col-6">
+                                <label for="phoneno">Phone No.:</label><br>
+                                <input type="text" id="phoneno" name="phoneno" placeholder="Enter your phoneno">
+                            </div><br>
+                            <br><br>
+                            <div class="col-6">
+                                <label for="address">Address:</label><br>
+                                <input type="text" id="address" name="address" placeholder="Enter your address">
+                            </div><br>
+                            <br><br>
+                            <div class="col-12">
+                                <label for="subject">Subject:</label><br>
+                                <textarea type="text" id="subject" name="subject"
+                                    placeholder="Enter your subject"></textarea>
+                            </div><br>
+                            <br><br>
+                        </div>
+                        <br>
+                        <div class="text-center">
+                            <button class="btn btn-success btn-lg">Submit</button> <br>
+                        </div>
+                    </form> <br>
+                </div><br>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7561.595167404107!2d73.832336!3d18.628172!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c78c00000001%3A0x9716783a750feb2d!2sS.S.B.%20POLYMERS!5e0!3m2!1sen!2sin!4v1744105789691!5m2!1sen!2sin"
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <br>
+        </div>
     </div>
 </div>
